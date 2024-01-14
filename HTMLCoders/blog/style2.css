@@ -1,0 +1,148 @@
+body {  height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #e4e0e0;
+    font-family: serif;  }
+   
+  header {
+    background: #0d10be;
+    height: 66px;}
+    header * {
+      color: #000000;
+    }
+  header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  header ul li {
+    float: left;
+    position: relative;
+  }
+  
+  header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+  }
+  
+  header ul li:hover ul {
+    display: block;
+  }
+  
+  header ul li ul li {
+    width: 100%;
+  }
+  
+  header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: #5a575798;
+  }
+  
+  
+  
+  header ul li ul li a:hover {
+    background: #000000;
+  }
+  
+  header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+  
+  header ul li a:hover {
+    background: #536cc0;
+    transition: 0.5s   }
+    header .logo {
+      float: left;
+      height: inherit;
+      margin-left: 2em;
+    }
+    
+    header .logo-text {
+      margin: 9px;
+      font-family: 'Candal', serif;
+    }
+    
+    header .logo-text span {
+      color: #05f7ff;  }
+      
+    .btn {
+      padding: .5rem 1rem;
+      background: #0dbe2a;
+      color: white;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      font-size: 1.08em;
+      font-family: 'Lora', serif;  }
+   
+
+.articles{
+  margin-top: 30px;
+}
+.articles .article{
+  display: flex;
+  flex-wrap:wrap;
+  margin-bottom: 30px;
+}
+.articles .article .left img{
+  height: 300px;
+  width: 500px;
+}
+.articles .article .right {
+  margin-left: 40px;
+  max-width: 50%;
+}
+.articles .article .right p.date{
+  color: #7f7e7e;
+}
+.articles .article .right p.description{
+    color: #2d2d2d;
+}
+
+.commentaire{
+top: 50;
+left: 50;
+position: absolute;
+transfpaorm: translate(-50%,-50%) ;
+width: 500px;
+
+}
+.commentaire h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.commentaire input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 5px;
+    border: 1px solid #0d10be;
+}
+.commentaire textarea{
+    width: 100%;
+    height: 100px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border:1px solid #0d10be;
+}.commentaire button{ 
+border: 0;
+padding: 10px 30px;
+background: #0dbe2a;
+font-size: 18px;
+border-radius: 5px;
+color: #FFFFFF;
+}
+.commentaire button:hover{
+    background-color: #7f7e7e;
+
+}
